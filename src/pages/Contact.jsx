@@ -1,7 +1,10 @@
 import React from 'react'
+import CardContact from './CardContact'
 
 export default function Contact() {
   return (
-    <h2>Contact</h2>
+    <div>
+        <CardContact titre={"gitHub"} image={"github"} lien={'https://github.com/'}/>
+    </div>
   )
 }
