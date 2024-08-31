@@ -11,7 +11,7 @@ export default function CardTeach({titre,description,image}) {
   return (
     <>
     <div className='w-52 m-3'>
-        <Card className="shadow text-white" >
+        <Card className="shadow dark:text-white text-black " >
             <CardHeader>
                 <CardTitle>{titre}</CardTitle>
                 <CardDescription>{description}</CardDescription>
