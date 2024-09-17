@@ -17,7 +17,7 @@ export default function CardTeach({titre,description,image}) {
                 <CardDescription>{description}</CardDescription>
             </CardHeader>
             <CardContent>
-                <img className='h-40' src={`teachnologie/${image}.png`} alt="" />
+                <img className='h-40' src={`${image}`} alt="" />
             </CardContent>
             <CardFooter>
                 <p>Card Footer</p>

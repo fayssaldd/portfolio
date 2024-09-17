@@ -1,6 +1,7 @@
 import React from 'react'
 // import { Button } from "@/components/ui/button"
 // import LogoImage from './LogoImage'
+import DevelopmentPana from '../assets/teachnologie/DevelopmentPana.png'
 import { motion } from "framer-motion"
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
                     initial={{x:900}}
                     animate={{x:0}}
                     transition={{duration:2}}
-                    src="DevelopmentPana.png" alt=""  className='w-4/6' 
+                    src={DevelopmentPana} alt=""  className='w-4/6' 
                 />
             </div>
         </div>
