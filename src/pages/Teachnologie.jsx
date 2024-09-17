@@ -85,7 +85,7 @@ export default function Teachnologie() {
             <CardTeach titre={"shadcn"} description={"description"} image={shadcn} />
             <CardTeach titre={"laravel"} description={"description"} image={laravel} />
         </div> */}
-        <Carousel className="w-full max-w-4xl">
+        <Carousel className="w-full  max-sm:w-96  max-w-4xl">
           <CarouselContent className="-ml-1">
             {
               Object.entries(technologies).map(([key, value]) => (
