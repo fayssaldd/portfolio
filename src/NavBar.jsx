@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <div>
-        <nav className="backdrop-blur-sm fixed w-full shadow">
+        <nav className="backdrop-blur-sm fixed top-0 z-30 w-full shadow">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -25,10 +25,13 @@ export default function NavBar() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
+
             </div>
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center">
+            <div className="flex flex-1 items-center justify-center sm:justify-start">
+              <div className="flex max-sm:justify-end max-sm:w-full flex-shrink-0 pr-5 items-center">
                 {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/> */}
+               
+                <ModeToggle/>
                 <p className='italic text-green-500'>elhafsy</p>
               </div>
               <div className="hidden sm:ml-6 sm:block">
@@ -36,8 +39,8 @@ export default function NavBar() {
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                   <a href="#about" className="rounded-md px-3 py-2 text-sm font-medium ">About</a>
                   <a href="#technologie" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Technologie</a>
-                  <a href="#" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Projects</a>
-                  <a href="#" className="rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Calendar</a>
+                  {/* <a href="#" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Projects</a>
+                  <a href="#" className="rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Calendar</a> */}
                   <ModeToggle/>
                 </div>
                 
@@ -49,10 +52,10 @@ export default function NavBar() {
         <div className={`${!isShow && "hidden"}`} id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-            <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+            {/* <a href="#about" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a> */}
+            <a href="#technologie" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Technologie</a>
             <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            {/* <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
           </div>
         </div>
       </nav>

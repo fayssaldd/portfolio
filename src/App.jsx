@@ -19,7 +19,7 @@ function App() {
     <>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       {
-        isShow ? <div className='bg-black w-full h-screen text-green-500 flex items-center justify-center text-9xl'>
+        isShow ? <div className='bg-black w-full h-screen text-green-500 flex items-center justify-center text-7xl'>
           <motion.p
             initial={{x:-200, scale:1.3, rotate:360}}
             animate={{ x:0, scale: 1, rotate:0,}}
