@@ -20,11 +20,11 @@ const router = createBrowserRouter([
         path:"/portfolio/contact",
         element:<Contact/>
       },
-      {
-        path:"/",
-        element:<h1>Hi</h1>
-      }
     ]
+  },
+  {
+    path:"/",
+    element:<h1>Hi</h1>
   }
 ])
 createRoot(document.getElementById('root')).render(
