@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path:"/",
-    element:<h1>Hi</h1>
+    element: <Navigate to={"/portfolio/"}/>
   }
 ])
 createRoot(document.getElementById('root')).render(
