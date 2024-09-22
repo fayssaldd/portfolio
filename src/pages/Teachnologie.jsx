@@ -69,7 +69,7 @@ export default function Teachnologie() {
   console.log(technologies);
   
   return (
-    <div id='technologie' className='flex flex-col justify-center items-center'>
+    <div id='technologie' className='w-full max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
         <div>
             <p className=' text-center text-3xl underline mb-4'>Teachnologies And Framworks</p>
         </div>
@@ -85,7 +85,7 @@ export default function Teachnologie() {
             <CardTeach titre={"shadcn"} description={"description"} image={shadcn} />
             <CardTeach titre={"laravel"} description={"description"} image={laravel} />
         </div> */}
-        <Carousel className="w-full  max-sm:w-96  max-w-4xl">
+        <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
           <CarouselContent className="-ml-1">
             {
               Object.entries(technologies).map(([key, value]) => (
