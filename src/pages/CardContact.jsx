@@ -11,7 +11,7 @@ export default function CardContact({titre,icon,lien,description}) {
   return (
     <>
         <div className='w-60 items-center justify-center m-3'>
-            <Card className="justify-center items-center py-3 shadow text-black flex" >
+            <Card className="justify-center items-center py-3 shadow  flex" >
                 {/* <CardHeader> */}
                     {/* <a className='flex justify-center' href={lien} target="_blank" rel="noopener noreferrer" >
                         <CardTitle>{icon}</CardTitle>
