@@ -7,7 +7,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-export default function CardTeach({titre,description,image}) {
+export default function CardTeach({titre,description,image,footer}) {
   return (
     <>
     {/* <div className=''> */}
@@ -20,7 +20,7 @@ export default function CardTeach({titre,description,image}) {
                 <img className='h-40' src={`${image}`} alt="" />
             </CardContent>
             <CardFooter>
-                <p>Card Footer</p>
+                <p>{footer}</p>
             </CardFooter>
         </Card>
     {/* </div> */}
