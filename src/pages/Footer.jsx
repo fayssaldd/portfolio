@@ -47,7 +47,7 @@ export default function Footer() {
                 <CardContact description={"faycaldd"} icon={<Github/>} lien={"https://github.com/fayssaldd"}  />
                 <CardContact description={"elhafsyfaycal@gmail.com"} icon={<Mail/>} lien={"mailto:elhafsyfaycal@gmail.com"}  />
                 <CardContact description={"+212 621 36 09 21"} icon={<MessageCircleCode/>} lien={"https://wa.me/+212621360921"}  />
-                <CardContact description={"Faycal Elhafsy"} icon={<Instagram/>} lien={"https://www.linkedin.com/in/faycal-elhafsy-8901762b1"}  />
+                <CardContact description={"Faycal Elhafsy"} icon={<Instagram/>} lien={"https://www.instagram.com/fayssal_hafsi"}  />
             </div>
             <div className="bg-black/5 p-6 text-center">
                 <span>© {new Date().getFullYear()} Copyright:</span>
