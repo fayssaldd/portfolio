@@ -37,12 +37,12 @@ export default function Teachnologie() {
     bootstrap: {
       nom: bootstrap,
       description: "Un framework CSS qui facilite la création de sites web réactifs et modernes.",
-      footer :"Un framework CSS utilitaire rapide et flexible."
+      footer :"Le framework CSS le plus populaire"
     },
     tailwind: {
       nom: tailwind,
       description: "Un framework CSS utilitaire qui permet de créer rapidement des interfaces stylées avec des classNamees pré-définies.",
-      footer : "Langage de balisage essentiel pour le web."
+      footer : "Un framework CSS utilitaire rapide et flexible."
     },
     javascript: {
       nom: javascript,
