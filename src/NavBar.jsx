@@ -30,8 +30,10 @@ export default function NavBar() {
             <div className="flex flex-1 items-center justify-center sm:justify-start">
               <div className="flex max-sm:justify-end max-sm:w-full flex-shrink-0 pr-5 items-center">
                 {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/> */}
+               <span className={'sm:hidden '}>
+                 <ModeToggle />
+               </span>
                
-                <ModeToggle/>
                 <p className='italic text-green-500'>elhafsy</p>
               </div>
               <div className="hidden sm:ml-6 sm:block">
