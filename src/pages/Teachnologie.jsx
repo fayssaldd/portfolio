@@ -81,7 +81,7 @@ export default function Teachnologie() {
   return (
     <div id='technologie' className='w-full max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
         <div>
-            <p className=' text-center text-3xl underline mb-4'>Teachnologies And Framworks</p>
+            <p className=' text-center text-green-400 text-3xl underline mb-4'>Teachnologies And Framworks</p>
         </div>
         {/* <div className='flex flex-wrap justify-center w-full '>
             <CardTeach titre={"html5"} description={"description"} image={html} />

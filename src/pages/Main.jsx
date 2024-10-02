@@ -8,6 +8,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim"
 import particlesConfig from '../components/config/particles-config'
+import Project from './Project'
 export default function Main() {
   const {theme} = useTheme()
   console.log(theme + 'hani');
@@ -35,6 +36,7 @@ export default function Main() {
       />
     <Home/>
     <Teachnologie/>
+    <Project/>
     {/* <Contact/> */}
     <Footer/>
     </>

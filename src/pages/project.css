@@ -1,0 +1,17 @@
+.img1{
+    padding: 40px;
+    position: relative;
+    color: #fff;
+    transition: transform 0.1s ease;
+    /* transform-style: preserve-3d; */
+    will-change: transform;
+    transform: rotate3d(-73, -20, 13, 20deg);
+    transition: transform 1s ease;
+
+}
+
+.img1:hover {
+    transform: rotate3d(0, 0, 0, 0deg);
+    transition: transform 1s ease;
+    cursor: pointer;
+}
