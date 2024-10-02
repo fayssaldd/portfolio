@@ -4,7 +4,6 @@ import {useTheme} from "@/components/theme-provider"
 
 export function ModeToggle() {
   const {setTheme, theme} = useTheme()
-
   return (
     <Button variant="ghost" onClick={setTheme} size="icon">
       {theme === 'light' ?

@@ -4,20 +4,28 @@ import './App.css'
 import NavBar from './NavBar'
 import { motion } from "framer-motion"
 import { ThemeProvider } from './components/theme-provider'
+import {useTheme} from "@/components/theme-provider"
 import Main from './pages/Main'
-
-
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim"
+import particlesConfig from './components/config/particles-config'
 function App() {
+  const {theme} = useTheme()
+  console.log(theme + 'hhh');
+  
+
   const [isShow,setIsShow] = useState(true)
   useEffect(()=>{
     setTimeout(()=>{
       setIsShow(false);
     },2000)
-  },[])
-
+  },[])  
+  
   return (
     <>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+   
       {
         isShow ? <div className='bg-black w-full h-screen text-green-500 flex items-center justify-center text-7xl'>
           <motion.p
@@ -37,7 +45,10 @@ function App() {
         </div>
         </>
       }
+
        </ThemeProvider>
+
+
 
     </>
   )
