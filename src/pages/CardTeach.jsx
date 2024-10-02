@@ -7,20 +7,23 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
+import { useTheme } from '../components/theme-provider'
 export default function CardTeach({titre,description,image,footer}) {
+  const {theme} = useTheme()
+
   return (
     <>
     {/* <div className=''> */}
         <Card className="shadow dark:text-white text-black " >
             <CardHeader>
-                <CardTitle>{titre}</CardTitle>
+                <CardTitle className={`${theme === 'dark' && "text-white" }`} >  {titre}</CardTitle>
                 <CardDescription>{description}</CardDescription>
             </CardHeader>
             <CardContent className="flex aspect-square items-center justify-center p-6">
                 <img className='h-40' src={`${image}`} alt="" />
             </CardContent>
             <CardFooter>
-                <p>{footer}</p>
+                <p  className={`${theme === 'dark' && "text-white" }`}>{footer}</p>
             </CardFooter>
         </Card>
     {/* </div> */}
