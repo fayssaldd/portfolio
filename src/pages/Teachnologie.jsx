@@ -95,11 +95,11 @@ export default function Teachnologie() {
             <CardTeach titre={"shadcn"} description={"description"} image={shadcn} />
             <CardTeach titre={"laravel"} description={"description"} image={laravel} />
         </div> */}
-        <Carousel className="w-[30rem] lg:w-full   max-sm:w-[11rem]  max-w-4xl">
+        <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
           <CarouselContent className="-ml-1">
             {
               Object.entries(technologies).map(([key, value]) => (
-                <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-48">
+                <CarouselItem  className="pl-1 md:basis-1/2 max-sm:basis-44 lg:basis-48">
                 <div className="p-1">
                     <CardTeach titre={key} description={value.description} image={value.nom} footer={value.footer} />
                 </div>
