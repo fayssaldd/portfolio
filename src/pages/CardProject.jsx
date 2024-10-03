@@ -4,7 +4,7 @@ export default function CardProject({img, nom, description, technologies}) {
   return (
     <>
 
-        <div className='flex justify-center max-sm:flex-col items-center shadow border m-4'>
+        <div className='flex rounded-lg justify-center max-sm:flex-col items-center shadow border p-4 m-4'>
             <div className='w-1/3 max-sm:w-full '>
             <img src={img} className='img1' alt="" />
             </div>

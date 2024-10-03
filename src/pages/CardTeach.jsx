@@ -13,18 +13,18 @@ export default function CardTeach({titre,description,image,footer}) {
 
   return (
     <>
-    {/* <div className=''> */}
-        <Card className="shadow dark:text-white text-black " >
-            <CardHeader>
-                <CardTitle className={`${theme === 'dark' && "text-white" }`} >  {titre}</CardTitle>
-                <CardDescription>{description}</CardDescription>
-            </CardHeader>
-            <CardContent className="flex aspect-square items-center justify-center p-6">
-                <img className='h-40' src={`${image}`} alt="" />
+    {/* <div className=''> */} 
+        <Card className="shadow w-[10rem] h-[13rem] pt-4 dark:text-white text-center text-black " >
+            {/* <CardHeader> */}
+                <CardTitle className={`${theme === 'dark' && "text-white" } pb-2 border-b-2 w-full`} >  {titre}</CardTitle>
+                {/* <CardDescription>{description}</CardDescription> */}
+            {/* </CardHeader> */}
+            <CardContent className="flex flex-col aspect-square  items-center justify-center p-6">
+                <img className='h-28' src={`${image}`} alt="" />
             </CardContent>
-            <CardFooter>
+            {/* <CardFooter>
                 <p  className={`${theme === 'dark' && "text-white" }`}>{footer}</p>
-            </CardFooter>
+            </CardFooter> */}
         </Card>
     {/* </div> */}
     </>

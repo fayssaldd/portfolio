@@ -34,15 +34,15 @@ export default function Teachnologie() {
       description: "Cascading Style Sheets, utilisé pour styliser et mettre en forme les pages web.",
       footer : "Conception et mise en page des interfaces web."
     },
-    bootstrap: {
-      nom: bootstrap,
-      description: "Un framework CSS qui facilite la création de sites web réactifs et modernes.",
-      footer :"Le framework CSS le plus populaire"
-    },
     tailwind: {
       nom: tailwind,
       description: "Un framework CSS utilitaire qui permet de créer rapidement des interfaces stylées avec des classNamees pré-définies.",
       footer : "Un framework CSS utilitaire rapide et flexible."
+    },
+    bootstrap: {
+      nom: bootstrap,
+      description: "Un framework CSS qui facilite la création de sites web réactifs et modernes.",
+      footer :"Le framework CSS le plus populaire"
     },
     javascript: {
       nom: javascript,
@@ -95,11 +95,11 @@ export default function Teachnologie() {
             <CardTeach titre={"shadcn"} description={"description"} image={shadcn} />
             <CardTeach titre={"laravel"} description={"description"} image={laravel} />
         </div> */}
-        <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
+        <Carousel className="w-[30rem] lg:w-full   max-sm:w-[11rem]  max-w-4xl">
           <CarouselContent className="-ml-1">
             {
               Object.entries(technologies).map(([key, value]) => (
-                <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-48">
                 <div className="p-1">
                     <CardTeach titre={key} description={value.description} image={value.nom} footer={value.footer} />
                 </div>
