@@ -6,12 +6,13 @@ export default function Footer() {
   return (
         <>
         <footer
+            id='contact'
             className="text-center pt-4 border-t text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
                                 <h6
                 className="mb-4 flex justify-center font-semibold uppercase text-center">
                 Contact
                 </h6>
-            <div className='flex max-sm:flex-row justify-around items-center flex-wrap max-md:flex-col'>
+            <div className='flex max-sm:flex-row mb-4 justify-around items-center flex-wrap max-md:flex-col'>
 
                 <CardContact description={"Faycal ElHafsy"} icon={<LinkedinIcon/>} lien={"https://www.linkedin.com/in/faycal-elhafsy-8901762b1"}  />
                 <CardContact description={"faycaldd"} icon={<Github/>} lien={"https://github.com/fayssaldd"}  />
