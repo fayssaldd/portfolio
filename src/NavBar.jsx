@@ -37,7 +37,8 @@ export default function NavBar() {
                       {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                       <a href="#about" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-500 hover:text-white">About</a>
                       <a href="#technologie" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-500 hover:text-white">Technologie</a>
-                      <a href="#contact" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-500 hover:text-white">Technologie</a>
+                      <a href="#projects" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-500 hover:text-white">Projects</a>
+                      <a href="#contact" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-500 hover:text-white">Contact</a>
                     </div>
                     
                   </div>
@@ -50,12 +51,13 @@ export default function NavBar() {
           </div>
              
         </div>       
-        <div className={`${!isShow && "hidden"}`} id="mobile-menu">
+        <div className={`${!isShow && "hidden"} `} id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-            {/* <a href="#about" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a> */}
-            <a href="#technologie" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Technologie</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+            <a href="#about" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-green-500 hover:text-white">About</a>
+            <a href="#technologie" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white">Technologie</a>
+            <a href="#projects" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white">Projects</a>
+            <a href="#contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white">contact</a>
             {/* <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
           </div>
         </div>

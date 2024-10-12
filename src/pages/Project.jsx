@@ -31,7 +31,7 @@ export default function Project() {
     }
   ]
   return (
-    <>
+    <div id='projects'>
       <div>
         <p className=' text-center  text-green-400 text-3xl underline mb-4'>All Projects</p>
       </div>
@@ -42,6 +42,6 @@ export default function Project() {
               technologies={tech.technologies}
         />
       ))}
-    </>
+    </div>
   )
 }
