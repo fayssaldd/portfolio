@@ -4,9 +4,9 @@ export default function CardProject({img, nom, description, technologies}) {
   return (
     <>
 
-        <div className='flex rounded-lg justify-center max-sm:flex-col items-center shadow border p-4 m-4'>
+        <div className='flex border-green-500 rounded-lg justify-center max-sm:flex-col items-center shadow border p-4 m-4'>
             <div className='w-1/3 max-sm:w-full '>
-            <img src={img} className='img1' alt="" />
+            <img src={img} className='img1 max-sm:!w-full lg:p-10'  alt="" />
             </div>
             <div className='w-2/3 max-sm:w-full max-sm:p-6 flex justify-center pr-4'>
             <p className='w-3/4 max-sm:w-full'>

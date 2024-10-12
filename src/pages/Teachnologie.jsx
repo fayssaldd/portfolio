@@ -79,22 +79,11 @@ export default function Teachnologie() {
   console.log(technologies);
   
   return (
-    <div id='technologie' className='w-full mb-8 border-b max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
+    <div id='technologie' className='w-full mb-8 max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
         <div>
             <p className=' text-center text-green-400 text-3xl underline mb-4'>Teachnologies And <br /> Framworks</p>
         </div>
-        {/* <div className='flex flex-wrap justify-center w-full '>
-            <CardTeach titre={"html5"} description={"description"} image={html} />
-            <CardTeach titre={"css3"} description={"description"} image={css} />
-            <CardTeach titre={"bootstrap"} description={"description"} image={bootstrap} />
-            <CardTeach titre={"tailwind"} description={"description"} image={tailwind} />
-            <CardTeach titre={"javascript"} description={"description"} image={javascript} />
-            <CardTeach titre={"php"} description={"description"} image={php} />
-            <CardTeach titre={"mySql"} description={"description"} image={mySql} />
-            <CardTeach titre={"react"} description={"description"} image={react} />
-            <CardTeach titre={"shadcn"} description={"description"} image={shadcn} />
-            <CardTeach titre={"laravel"} description={"description"} image={laravel} />
-        </div> */}
+        <div className='lg:hidden'>
         <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
           <CarouselContent className="-ml-1">
             {
@@ -106,18 +95,21 @@ export default function Teachnologie() {
                 </CarouselItem>
               ))
             }
-            {/* {images.map((im, index) => (
-              <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                <CardTeach titre={"laravel"} description={"description"} image={im} />
-                  
-                </div>
-              </CarouselItem>
-            ))} */}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          {/* <CarouselPrevious />
+          <CarouselNext /> */}
         </Carousel>
+        </div>
+        <div className='max-sm:hidden flex flex-wrap w-3/5 justify-center items-start p-4 shadow-xl border border-green-500'>
+            {
+              Object.entries(technologies).map(([key, value]) => (
+                <div className="p-1">
+                    <CardTeach titre={key} description={value.description} image={value.nom} footer={value.footer} />
+                </div>
+              ))
+            }
+        </div>
+        
     </div>
   )
 }
